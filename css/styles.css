@@ -256,26 +256,18 @@ body {
 
 .icon-antena::before {
   background-image: url(../img/svg/antenna\ 1.svg);
-  width: 70px;
-  height: 70px;
 }
 
 .icon-clock::before {
   background-image: url(../img/svg/clock\ 1.svg);
-  width: 70px;
-  height: 70px;
 }
 
 .icon-diagram::before {
   background-image: url(../img/svg/diagram\ 1.svg);
-  width: 70px;
-  height: 70px;
 }
 
 .icon-astranaut::before {
   background-image: url(../img/svg/astronaut\ 1.svg);
-  width: 70px;
-  height: 70px;
 }
 
 /* -----------------feature-------------- */
