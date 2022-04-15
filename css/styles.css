@@ -116,7 +116,6 @@ body {
 }
 
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -172,8 +171,6 @@ body {
 /* -------------------contact-icon--------*/
 
 .contact-link {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -183,7 +180,8 @@ body {
 .contact-text {
   margin-left: 10px;
 }
-.contact-iteam:hover .contact-icon {
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
   fill: var(--accent-color);
 }
 /* -------------------Hero----------------*/
@@ -391,10 +389,12 @@ body {
   fill: var(--soc-icon-color);
 }
 
-.soc-icon-link:hover {
+.soc-icon-link:hover,
+.soc-icon-link:focus {
   background-color: var(--accent-color);
 }
-.soc-icon-link:hover .soc-icon {
+.soc-icon-link:hover .soc-icon,
+.soc-icon-link:focus .soc-icon {
   fill: var(--soc-icon-hover-color);
 }
 
@@ -424,7 +424,8 @@ body {
   fill: var(--client-logo);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -493,11 +494,6 @@ body {
   margin-bottom: 30px;
 }
 
-.project-iteam:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-iteam:nth-child(3n) {
   margin-right: 0px;
 }
@@ -522,6 +518,11 @@ body {
   padding-bottom: 30px;
   padding-left: 24px;
   background-color: var(--primary-background-color);
+}
+
+.project-iteam:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*----------------footer------------------*/
@@ -579,6 +580,9 @@ body {
 }
 
 .footer-soc-title {
+  padding-top: 12px;
+  padding-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -588,7 +592,6 @@ body {
 }
 
 .footer-soc-icon-list {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
 }
@@ -609,6 +612,7 @@ body {
   fill: var(--foorer-soc-icon-color);
 }
 
-.footer-soc-icon-link:hover {
+.footer-soc-icon-link:hover,
+.footer-soc-icon-link:focus {
   background-color: var(--accent-color);
 }
